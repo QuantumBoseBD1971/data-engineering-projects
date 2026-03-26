@@ -30,7 +30,7 @@ The goal of this repo is not just code — but **real-world patterns used in pro
 
 ## 📁 Projects
 
-### ⭐ Contract-Driven Lakehouse Framework (Flagship)
+### 🔹 Contract-Driven Lakehouse Framework
 
 A modular, contract-driven data platform inspired by modern lakehouse architectures.
 
