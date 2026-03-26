@@ -92,11 +92,3 @@ Provides visibility into pipeline runs and detects data quality issues early in 
 - Logging frameworks  
 
 ---
-
-## 🎯 Purpose
-
-This repository is part of my portfolio to demonstrate **data engineering capabilities in real-world scenarios**, not just isolated scripts.
-
----
-
-More projects will be added as I build production-ready patterns.
