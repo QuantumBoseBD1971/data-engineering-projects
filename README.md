@@ -28,29 +28,68 @@ The goal of this repo is not just code — but **real-world patterns used in pro
 
 ---
 
-## 📂 Projects
+## 📁 Projects
 
-### 🔹 Schema Evolution Demo
-Demonstrates handling column type changes (e.g. Integer → Long) using Delta Lake principles.
+### ⭐ Contract-Driven Lakehouse Framework (Flagship)
 
-### 🔹 ETL Pipeline Pattern *(coming soon)*
-End-to-end pipeline:
-- Source → Landing → Raw → Curated
+A modular, contract-driven data platform inspired by modern lakehouse architectures.
 
-### 🔹 Spark Transformations Lab *(coming soon)*
-Advanced transformations:
-- Joins
-- Window functions
-- Aggregations
+**Overview:**
+This project implements a reusable data pipeline framework where datasets are defined via contracts (schemas + rules), enabling scalable and consistent data ingestion and transformation.
+
+**Key Features:**
+- Source → Landing → Bronze → Silver → Gold pipeline design  
+- Contract-based schema enforcement  
+- Schema evolution handling (type changes, new columns)  
+- Data validation and rejected records handling  
+- Partitioning and optimisation strategies  
+
+**Tech Stack:**
+- PySpark  
+- Delta Lake  
+- Python  
 
 ---
 
-## 🛠 Tech Stack
+### 🔹 API Ingestion Framework
 
-- Python
-- PySpark
-- Databricks
-- Delta Lake
+Reusable ingestion system for extracting and loading data from external APIs into a structured data lake.
+
+**Overview:**
+Designed to simulate real-world ingestion scenarios such as pulling data from SaaS platforms or public APIs.
+
+**Key Features:**
+- REST API ingestion with pagination support  
+- Incremental loading (date-based / cursor-based)  
+- Retry logic and rate limit handling  
+- Schema mapping and normalisation  
+- Config-driven ingestion pipelines  
+
+**Tech Stack:**
+- Python  
+- Requests  
+- PySpark  
+
+---
+
+### 🔹 Data Observability & Validation System
+
+A monitoring and validation layer for ensuring data pipeline reliability and quality.
+
+**Overview:**
+Provides visibility into pipeline runs and detects data quality issues early in the pipeline lifecycle.
+
+**Key Features:**
+- Row count and null value checks  
+- Schema drift detection  
+- Data quality rules engine  
+- Logging and pipeline run tracking  
+- Error reporting and alert simulation  
+
+**Tech Stack:**
+- Python  
+- PySpark  
+- Logging frameworks  
 
 ---
 
